@@ -8,7 +8,7 @@ function testConstructURL() {
 async function testInvokeURL() {
   const weatherAPIObj = new WeatherAPI();
 
-  weatherAPIObj.constructURL("Mumbai");
+  weatherAPIObj.constructURL("Bangalore");
 
   const responseJSON = await weatherAPIObj.invokeURL();
   // weather-object create
