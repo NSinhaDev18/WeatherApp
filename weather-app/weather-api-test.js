@@ -5,4 +5,12 @@ function testConstructURL() {
   weatherAPIObj.constructURL("Mumbai");
 }
 
-testConstructURL();
+function testInvokeURL() {
+  // weather-object create
+  // responseJSON invokeURL()
+  // print (responseJSON)
+}
+
+// testConstructURL();
+
+testInvokeURL();

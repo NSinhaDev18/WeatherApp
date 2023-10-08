@@ -19,7 +19,12 @@ class WeatherAPI {
     console.log(this.apiURL.toString());
   }
 
-  invokeURL() {}
+  async invokeURL() {
+    // responseObj = await  fetch(url) // 1s / 10s
+    // responseJSON = await responseObj.json()
+    // return
+    // print (json-response)
+  }
 }
 
 export { WeatherAPI };
