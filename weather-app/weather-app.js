@@ -31,7 +31,9 @@ class WeatherApp {
           dateElement.innerText = responseObj.DATE;
 
           // Temperature Element
-          const temperatureElement = document.querySelector(".current .temp");
+          const temperatureElement = document.querySelector(
+            ".current .temp .digit"
+          );
           temperatureElement.innerText = responseObj.TEMPERATURE;
 
           // TemperatureType Element
@@ -41,7 +43,7 @@ class WeatherApp {
 
           // TemperatureType Element
           const lowHighTempElement = document.querySelector(".current .hi-low");
-          lowHighTempElement.innerText = `${responseObj.LOW_TEMPERATURE} / ${responseObj.HIGH_TEMPERATURE}`;
+          lowHighTempElement.innerText = `${responseObj.LOW_TEMPERATURE}°c / ${responseObj.HIGH_TEMPERATURE}°c`;
         });
       } else {
         // Not needed
