@@ -43,7 +43,7 @@ class WeatherApp {
 
           // TemperatureType Element
           const lowHighTempElement = document.querySelector(".current .hi-low");
-          lowHighTempElement.innerText = `${responseObj.LOW_TEMPERATURE}°c / ${responseObj.HIGH_TEMPERATURE}°c`;
+          lowHighTempElement.innerText = `Min/Max: ${responseObj.LOW_TEMPERATURE}°c / ${responseObj.HIGH_TEMPERATURE}°c`;
         });
       } else {
         // Not needed
